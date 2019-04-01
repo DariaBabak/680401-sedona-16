@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Daria Babak](https://up.htmlacademy.ru/adaptive/16/user/680401).
-* Наставник: Оксана Вайнруб.
+* Наставник: [Оксана Вайнруб] (https://htmlacademy.ru/profile/id166797).
 
 ---
 
