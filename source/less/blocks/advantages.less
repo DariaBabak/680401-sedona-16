@@ -18,6 +18,7 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -77,5 +78,25 @@
 @media (min-width: @tablet-width) {
   .advantages__item {
     flex-direction: row;
+  }
+
+  .advantages__slogan,
+  .advantages__title {
+    width: 445px;
+    margin: auto;
+  }
+
+  .advantages__item-group {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__slogan {
+    width: 445px;
+  }
+
+  .advantages__title {
+    width: 495px;
   }
 }
