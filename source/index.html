@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -23,11 +25,13 @@
           <li class="site-list__item main-navigation__list-item">
             <a href="https://htmlacademy.ru">HTML Academy</a>
           </li>
+          <li class="site-list__item main-navigation__list-item">
+            <a class="main-navigation__emblem-wrapper">
+              <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
+            </a>
+          </li>
         </ul>
         <div class="main-navigation__menu">
-          <a class="main-navigation__emblem-wrapper">
-            <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
-          </a>
           <button class="main-navigation__toggle" type="button">Открыть меню</button>
         </div>
       </nav>
@@ -47,10 +51,14 @@
         </header>
         <ol class="advantages__list site-list">
           <li class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <span class="advantages__number">№1</span>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
+            <div class="advantages__item-wrapper">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <span class="advantages__number">№1</span>
+              <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="advantages__item-wrapper">
+              <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
+            </div>
             <ul class="recommendations site-list">
               <li class="recommendations__item">
                 <h3 class="recommendations__title">Жильё</h3>
@@ -67,10 +75,14 @@
             </ul>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Там есть мост Дьявола</h3>
-            <span class="advantages__number">№2</span>
-            <p class="advantages__description">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
-            <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+            <div class="advantages__item-wrapper">
+              <h3 class="advantages__title">Там есть мост Дьявола</h3>
+              <span class="advantages__number">№2</span>
+              <p class="advantages__description">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages__item-wrapper">
+              <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+            </div>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая площадь</h3>
