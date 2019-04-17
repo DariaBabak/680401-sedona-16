@@ -1,5 +1,6 @@
 .recommendations {
   .set-font();
+  .list-reset();
   background-color: @white-color;
   padding: 36px 0 29px 70px;
 }
@@ -11,8 +12,28 @@
   margin: 0;
 }
 
+.recommendations__item {
+  width: 256px;
+}
+
 .recommendations__description {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .recommendations {
+    display: flex;
+  }
+
+  .recommendations__item {
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendations__item {
+    width: 400px;
+  }
 }

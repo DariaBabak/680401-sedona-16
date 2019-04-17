@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -23,11 +24,13 @@
           <li class="site-list__item main-navigation__list-item">
             <a href="https://htmlacademy.ru">HTML Academy</a>
           </li>
+          <li class="site-list__item main-navigation__list-item">
+            <a class="main-navigation__emblem-wrapper" href="index.html">
+              <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
+            </a>
+          </li>
         </ul>
         <div class="main-navigation__menu">
-          <a class="main-navigation__emblem-wrapper" href="index.html">
-            <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
-          </a>
           <button class="main-navigation__toggle" type="button">Открыть меню</button>
         </div>
       </nav>
@@ -40,8 +43,8 @@
     </main>
     <footer class="page-footer">
       <p class="page-footer__tag">#visitsedona</p>
-      <div class="page-footer__social social">
-        <ul class="social__list site-list">
+      <div class="page-footer__social">
+        <ul class="social__list site-list social">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com">Мы в Твиттере</a>
           </li>
@@ -53,8 +56,9 @@
           </li>
         </ul>
       </div>
-      <b class="page-footer__developers">Разработано</b>
-      <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </footer>
+      <div class="page-footer__developers-wrapper">
+        <b class="page-footer__developers">Разработано</b>
+        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
   </body>
 </html>

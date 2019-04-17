@@ -18,6 +18,8 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -71,4 +73,26 @@
 .advantages__item:first-of-type .advantages__description,
 .advantages__item:nth-of-type(2) .advantages__description {
   padding-bottom: 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    flex-direction: row;
+  }
+
+  .advantages__slogan,
+  .advantages__title {
+    width: 445px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__slogan {
+    width: 445px;
+  }
+
+  .advantages__title {
+    width: 495px;
+  }
 }

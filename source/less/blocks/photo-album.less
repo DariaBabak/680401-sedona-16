@@ -1,4 +1,5 @@
 .photo-album {
+  .list-reset();
   background-color: @white-color;
   padding: 0 0 0 20px;
 }
@@ -30,4 +31,16 @@
 .photo-album__photo-likes {
   margin: 0;
   padding: 8px 0 0 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-album__item {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-album__item {
+    background-color: @white-color;
+  }
 }
