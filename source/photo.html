@@ -9,20 +9,19 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation">
-        <button class="main-navigation__close" type="button">Закрыть меню</button>
+      <nav class="main-navigation main-navigation--opened .main-navigation--nojs">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item main-navigation__list-item">
-            <a href="index.html">Главная</a>
+            <a href="index.html"><span class="main-navigation-text">Главная</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item site-list__item--active">
-            <a href="#">Фото и видео</a>
+            <a href="#"><span class="main-navigation-text">Фото и видео</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
-            <a href="form.html">Форма отзыва</a>
+            <a href="form.html"><span class="main-navigation-text">Форма отзыва</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru"><span class="main-navigation-text">HTML Academy</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
             <a class="main-navigation__emblem-wrapper" href="index.html">
@@ -31,7 +30,7 @@
           </li>
         </ul>
         <div class="main-navigation__menu">
-          <button class="main-navigation__toggle" type="button">Открыть меню</button>
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
       </nav>
       <div class="page-header__logo-wrapper">
@@ -91,5 +90,20 @@
         <b class="page-footer__developers">Разработано</b>
         <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
+      <script>
+      var navMain = document.querySelector(".main-navigation");
+      var navToggle = document.querySelector(".main-navigation__toggle");
+
+      navMain.classList.remove("main-navigation--nojs");
+      navToggle.addEventListener("click", function() {
+        if(navMain.classList.contains("main-navigation--closed")) {
+          navMain.classList.remove("main-navigation--closed");
+          navMain.classList.add("main-navigation--opened");
+        } else {
+          navMain.classList.add("main-navigation--closed");
+          navMain.classList.remove("main-navigation--opened");
+        }
+      });
+      </script>
   </body>
 </html>
