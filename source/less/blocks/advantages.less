@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+.advantages__title {
+  margin-bottom: 8px;
+}
+
 .advantages__slogan,
 .advantages__title {
   font-size: 18px;
@@ -46,38 +50,22 @@
   line-height: 21px;
   text-align: center;
   margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 40px;
 }
 
 .advantages__number {
   text-align: center;
   display: block;
   margin-bottom: 15px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 102px;
-    left: 184px;
-    width: 9px;
-    height: 2px;
-    background-color: @white-color;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 102px;
-    left: 225px;
-    width: 9px;
-    height: 2px;
-    background-color: @white-color;
-  }
 }
 
 .advantages__slogan {
   display: block;
   margin-bottom: 27px;
+}
+
+.advantages__item-second {
+  margin-bottom: 5px;
 }
 
 .advantages__item-first .advantages__title {
@@ -93,6 +81,54 @@
 .advantages__item-first .advantages__description,
 .advantages__item-second .advantages__description {
   padding-bottom: 39px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .advantages__item {
+    position: relative;
+    &:nth-of-type(4)::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: 22px;
+      width: 280px;
+      height: 2px;
+      background-color: #d6d6d6;
+    }
+    &:nth-of-type(4)::after {
+      content: "";
+      position: absolute;
+      top: 157px;
+      left: 22px;
+      width: 280px;
+      height: 2px;
+      background-color: #d6d6d6;
+    }
+  }
+
+  .advantages__item-first {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+    	height: 0;
+    	border-top: 15px solid #ffffff;
+    	border-left: 160px solid transparent;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+    	height: 0;
+    	border-top: 15px solid #ffffff;
+    	border-right: 160px solid transparent;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
