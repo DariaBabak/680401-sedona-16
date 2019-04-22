@@ -9,20 +9,19 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation">
-        <button class="main-navigation__close" type="button">Закрыть меню</button>
+      <nav class="main-navigation main-navigation--opened .main-navigation--nojs">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item main-navigation__list-item site-list__item--active">
-            <a href="#">Главная</a>
+            <a href="#"><span class="main-navigation-text">Главная</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
-            <a href="photo.html">Фото и видео</a>
+            <a href="photo.html"><span class="main-navigation-text">Фото и видео</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
-            <a href="form.html">Форма отзыва</a>
+            <a href="form.html"><span class="main-navigation-text">Форма отзыва</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru"><span class="main-navigation-text">HTML Academy</span></a>
           </li>
           <li class="site-list__item main-navigation__list-item">
             <a class="main-navigation__emblem-wrapper">
@@ -30,9 +29,7 @@
             </a>
           </li>
         </ul>
-        <div class="main-navigation__menu">
-          <button class="main-navigation__toggle" type="button">Открыть меню</button>
-        </div>
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
@@ -49,7 +46,7 @@
           <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
         <ol class="advantages__list site-list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-first">
             <div class="advantages__item-wrapper">
               <h3 class="advantages__title">Настоящий городок</h3>
               <span class="advantages__number">№1</span>
@@ -73,7 +70,7 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-second">
             <div class="advantages__item-wrapper">
               <h3 class="advantages__title">Там есть мост Дьявола</h3>
               <span class="advantages__number">№2</span>
@@ -121,5 +118,20 @@
         <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+    <script>
+    var navMain = document.querySelector(".main-navigation");
+    var navToggle = document.querySelector(".main-navigation__toggle");
+
+    navMain.classList.remove("main-navigation--nojs");
+    navToggle.addEventListener("click", function() {
+      if(navMain.classList.contains("main-navigation--closed")) {
+        navMain.classList.remove("main-navigation--closed");
+        navMain.classList.add("main-navigation--opened");
+      } else {
+        navMain.classList.add("main-navigation--closed");
+        navMain.classList.remove("main-navigation--opened");
+      }
+    });
+    </script>
   </body>
 </html>
