@@ -9,6 +9,7 @@
   background-color: @blue-color;
   display: flex;
   height: 390px;
+  margin: 0 auto;
   margin-top: 55px;
 }
 
@@ -19,6 +20,13 @@
 @media (max-width: @mobile-width-only) {
   .page-header__logo-wrapper {
     position: relative;
+
+    @media (min-resolution: @retina-dpi),
+           (min-resolution: @retina-dpi) {
+             background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
+             background-position: center;
+             background-size: 1536px auto;
+           }
 
     &::before {
       content: "";
@@ -44,6 +52,13 @@
       border-bottom: 25px solid #ffffff;
     }
   }
+
+    .page-header__logo-image {
+      display: block;
+      width: 280px;
+      height: auto;
+      margin: 0 auto;
+    }
 }
 
 @media (min-width: @tablet-width) {
@@ -57,8 +72,21 @@
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: center;
     height: 520px;
-    margin-top: 0;
+    margin: 0 auto;
+
+    @media (min-resolution: @retina-dpi),
+           (min-resolution: @retina-dpi) {
+             background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+             background-position: center;
+             background-size: 1536px auto;
+           }
   }
+   .page-header__logo-image {
+     display: block;
+     width: 464px;
+     height: auto;
+     margin: 0 auto;
+   }
 }
 
 @media (min-width: @desktop-width) {
@@ -69,5 +97,12 @@
   .page-header__logo-wrapper {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: center;
+
+    @media (min-resolution: @retina-dpi),
+           (min-resolution: @retina-dpi) {
+             background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+             background-position: center;
+             background-size: 2400px auto;
+           }
   }
 }

@@ -25,7 +25,11 @@
           </li>
           <li class="site-list__item main-navigation__list-item">
             <a class="main-navigation__emblem-wrapper" href="index.html">
-              <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
+              </picture>
             </a>
           </li>
         </ul>
@@ -35,7 +39,11 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/text-sedona.svg" width="230" height="155" alt="Добро пожаловать в Седону!">
+          <picture>
+            <source-media="min-width: 1200px" srcset="img/text-sedona-index.svg">
+            <source-media="min-width: 768px" srcset="img/text-sedona-index.svg">
+            <img class="page-header__logo-image" src="img/text-sedona-index.svg" width="280" height="385" alt="Добро пожаловать в Седону!">
+          </picture>
         </a>
     </header>
     <main class="page-main">

@@ -37,10 +37,30 @@
   .photo-album__item {
     background-color: #f2f2f2;
   }
+
+  .photo-album__photo {
+    width: 324px;
+    height: auto;
+
+    &:first-of-type {
+      width: 648px;;
+      height: auto;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .photo-album__item {
     background-color: @white-color;
+  }
+
+  .photo-album__photo {
+    width: 400px;
+    height: auto;
+
+    &:first-of-type {
+      width: 1200px;
+      height: auto;
+    }
   }
 }
