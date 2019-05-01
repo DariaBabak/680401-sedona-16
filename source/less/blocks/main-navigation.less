@@ -11,8 +11,8 @@
   font-size: 18px;
   line-height: 40px;
   color: @white-color;
-  font-weight: bold;
   background-color: @blue-color;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
 }
@@ -178,7 +178,7 @@
   .main-navigation__list-left {
     display: flex;
     justify-content: flex-end;
-    margin-right: 25px;
+    margin-right: 17px;
   }
 
   .main-navigation__list a,
@@ -198,16 +198,16 @@
   .main-navigation__list-item,
   .main-navigation__list-left-item {
     min-width: 106px;
-    padding: 14px 0 0 5px;
-    margin-bottom: 14px;
+    padding-top: 14px;
+    margin-bottom: 8px;
   }
 
   .main-navigation__list-item:first-of-type {
-    margin-right: 43px;
+    margin-right: 35px;
   }
 
-  .main-navigation__list-left-item:first-of-type {
-    margin-right: 40px;
+  .main-navigation__list-left-item:last-of-type {
+    margin-left: 33px;
   }
 
   .main-navigation__list-item--active a,
@@ -246,16 +246,19 @@
   }
 
   .main-navigation__list {
-    margin-left: 61px;
+    margin-left: 60px;
   }
 
   .main-navigation__list-left {
-    margin-right: 68px;
+    margin-right: 64px;
   }
 
-  .main-navigation__list-item:first-of-type,
-  .main-navigation__list-left-item:first-of-type {
-    margin-right: 128px;
+  .main-navigation__list-item:first-of-type {
+    margin-right: 120px;
+  }
+
+  .main-navigation__list-left-item:last-of-type {
+    margin-left: 118px;
   }
 
   .main-navigation__emblem-wrapper {
