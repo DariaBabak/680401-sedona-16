@@ -22,6 +22,7 @@
 }
 
 .photo-album__photo-title {
+  display: block;
   margin: 0;
   font-size: 14px;
   line-height: 24px;
@@ -29,8 +30,17 @@
 }
 
 .photo-album__photo-likes {
+  display: block;
+  position: relative;
   margin: 0;
   padding: 8px 0 0 35px;
+}
+
+.photo-album__like-icon {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  fill: #b2b2b2;
 }
 
 @media (min-width: @tablet-width) {
