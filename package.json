@@ -37,5 +37,8 @@
   ],
   "engines": {
     "node": "8.15"
+  },
+  "dependencies": {
+    "webp-converter": "^2.2.2"
   }
 }
