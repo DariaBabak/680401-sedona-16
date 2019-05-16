@@ -5,7 +5,7 @@
     <title>Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="build/css/style.min.css" rel="stylesheet">
+    <link href="../css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div style="display: none">
@@ -59,7 +59,7 @@
       <section class="advantages">
         <header class="advantages__header">
           <h2 class="visually-hidden">Приемущества Седоны</h2>
-          <b class="advantages__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+          <b class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
           <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
         <ol class="advantages__list">
@@ -115,7 +115,7 @@
                   </g>
                 </svg>
                 <h3 class="recommendations__title">Еда</h3>
-                <p class="recommendations__description">Всегда заказыайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="recommendations__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li><li class="advantages__item advantages__item-second">
@@ -137,19 +137,29 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <span class="advantages__number">— №3 —</span>
-            <p class="advantages__description">Все интересные места находятся<br> очень близко</p>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Красивая дорога</h3>
             <span class="advantages__number">— №4 —</span>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем  не скучно!</p>
             </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Мало туристов</h3>
             <span class="advantages__number">— №5 —</span>
-            <p class="advantages__description">Большинство едет в Гранд-Каньон<br> и толпится там</p>
+            <p class="advantages__description last-description">Большинство едет в Гранд-Каньон<br> и толпится там</p>
           </li>
         </ol>
+      </section>
+      <section class="reservation">
+        <h2 class="reservation__title">Заинтересовались?</h2>
+        <p class="reservation__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="reservation__link">Найти гостиницу</a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+          <img class="reservation__image" src="img/bg-map-mobile@1x.webp" srcset="img/bg-map-mobile@2x.webp 2x" width="320" height="350" alt="Карта Седоны">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
