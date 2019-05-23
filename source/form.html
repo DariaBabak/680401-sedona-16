@@ -78,10 +78,12 @@
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__contact-fieldset">
               <legend class="feedback-form__legend">Конактная информация:</legend>
-              <label class="feedback-form__info-label" for="yourphone">Контактный телефон*:</label><br>
-              <input class="contact-info" type="text" name="phone" id="yourphone" placeholder="Введите телефон"><br>
-              <label class="feedback-form__info-label" for="youremail">Электронная почта*:</label><br>
-              <input class="contact-info" type="text" name="email" id="youremail" placeholder="Введите e-mail">
+              <div class="feedback-form__contact-wrapper">
+                <label class="feedback-form__info-label" for="yourphone"><span class="phone">Контактный</span> телефон*:</label><br>
+                <input class="contact-info" type="text" name="phone" id="yourphone" placeholder="Введите телефон"><br>
+                <label class="feedback-form__info-label" for="youremail">Электронная почта*:</label><br>
+                <input class="contact-info" type="text" name="email" id="youremail" placeholder="Введите e-mail">
+              </div>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__impression-fieldset">
               <legend class="feedback-form__legend feedback-form__impression-legend">Ваше общее впечатление:</legend>
@@ -94,20 +96,25 @@
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__sights-fieldset">
               <legend class="feedback-form__legend">Посещённые достопримечательности:</legend>
-              <input class="feedback-form__checkbox" type="checkbox" id="devilsbridge" checked>
-              <label class="feedback-form__impression-label" for="devilsbridge">Мост Дьявола</label><br>
-              <input class="feedback-form__checkbox" type="checkbox" id="mountainbell" checked>
-              <label class="feedback-form__impression-label" for="mountainbell">Гора-Колокол</label><br>
-              <input class="feedback-form__checkbox" type="checkbox" id="slidepark" checked>
-              <label class="feedback-form__impression-label" for="slidepark">Слайд-парк</label><br>
-              <input class="feedback-form__checkbox" type="checkbox" id="redrocks">
-              <label class="feedback-form__impression-label" for="redrocks">Красные скалы</label><br>
+              <div class="feedback-form__sights-wrapper">
+                <input class="feedback-form__checkbox" type="checkbox" id="devilsbridge" checked>
+                <label class="feedback-form__impression-label" for="devilsbridge">Мост Дьявола</label><br>
+                <input class="feedback-form__checkbox" type="checkbox" id="mountainbell" checked>
+                <label class="feedback-form__impression-label" for="mountainbell">Гора-Колокол</label><br>
+                <input class="feedback-form__checkbox" type="checkbox" id="slidepark" checked>
+                <label class="feedback-form__impression-label" for="slidepark">Слайд-парк</label><br>
+                <input class="feedback-form__checkbox" type="checkbox" id="redrocks">
+                <label class="feedback-form__impression-label" for="redrocks">Красные скалы</label><br>
+              </div>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__emotions-fieldset">
               <legend class="feedback-form__legend feedback-form__emotions-legend">Опишите свои эмоции:</legend>
               <textarea class="feedback-form__emotions" placeholder="Опишите подробно все свои восторги"rows="9"></textarea>
             </fieldset>
-            <button class="feedback-form__button" type="button">Отправить отзыв</button>
+            <div class="feedback-form__button-wrapper">
+              <button class="feedback-form__button" type="button">Отправить отзыв</button>
+              <span class="required-fields"> * — обязательные поля</span>
+            </div>
           </div>
         </form>
       </section>
