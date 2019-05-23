@@ -1,0 +1,128 @@
+.presentation {
+  margin: 0 auto;
+}
+
+.presentation__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.presentation__description {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  width: 240px;
+  margin-bottom: 35px;
+}
+
+.presentation__photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.volume-scale {
+  position: relative;
+  width: 280px;
+  min-height: 45px;
+  background-color: rgba(0,0,0,.5);
+  margin: 0 auto;
+  display: block;
+  margin-top: -45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 22px;
+    left: 22px;
+    top: 20px;
+    background-color: rgba(255,255,255,.3);
+    left: 22px;
+    height: 4px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 17px;
+    width: 9px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.controls {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  margin-bottom: 74px;
+}
+
+.presentation__button {
+  width: 70px;
+  min-height: 66px;
+  line-height: 0;
+  background: 0 0;
+  border: none;
+  outline: none;
+  &:nth-of-type(2) {
+    margin-left: 105px;
+  }
+}
+
+.presentation__controls {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
+
+  .presentation__description {
+    width: 417px;
+    margin-bottom: 73px;
+  }
+
+  .presentation__photo {
+    width: 648px;
+    height: 500px;
+  }
+
+  .controls-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    height: 94px;
+    background-color: #524c4a;
+    margin-top: -94px;
+    margin-left: 60px;
+  }
+
+  .volume-scale {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .controls {
+    background-color: transparent;
+  }
+}

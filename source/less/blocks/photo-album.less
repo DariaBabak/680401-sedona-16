@@ -4,17 +4,9 @@
   margin: 0 auto;
 }
 
-.photo-album__item {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
 .photo-album__photo-author {
   font-weight: 400;
   text-transform: none;
-  margin: 0;
 }
 
 .photo-album__photo {
@@ -26,7 +18,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 24px;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 
 .photo-album__photo-likes {
@@ -40,14 +32,50 @@
   position: absolute;
   top: 6px;
   left: 0;
+  width: 22px;
+  height: 22px;
   fill: #b2b2b2;
+}
+
+@media (max-width: @mobile-width-only) {
+  .photo-album__item {
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #e5e5e5;
+    }
+
+    &:last-of-type::after {
+      content: "";
+      position: absolute;
+      top: 389px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photo-album {
+    font-size: 14px;
+    line-height: 24px;
     width: 648px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 66px;
   }
 
   .photo-album__item {
@@ -56,8 +84,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
     margin-bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 
   .photo-album__item:first-of-type {
@@ -66,8 +96,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 0;
-    padding-bottom: 20px;
     flex-direction: row;
+  }
+
+  .photo-album__item:nth-of-type(3) {
+    background-color: #eaeaea;
+  }
+
+  .photo-album__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-album__photo-legend {
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .photo-album__photo-author {
+    padding-top: 4px;
   }
 
   .photo-album__item:first-of-type picture {
@@ -79,13 +126,14 @@
     width: 324px;
   }
 
-  .photo-album__photo-legend {
-    margin-left: 80px;
+  .photo-album__photo-likes {
+    font-weight: bold;
+    margin-right: 22px;
+    margin-top: 13px;
   }
 
-  .photo-album__photo-likes {
-    align-self: center;
-    margin-right: 82px;
+  .photo-album__wrapper .photo-album__photo-likes {
+    margin-right: 30px;
   }
 
   .photo-album__like-icon {
