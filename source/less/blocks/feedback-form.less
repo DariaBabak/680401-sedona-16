@@ -135,7 +135,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  color:#000000;
+  color: #000000;
 }
 
 :-moz-placeholder {
@@ -168,8 +168,8 @@
   display: block;
 }
 
-.feedback-form__checkbox + label:before {
-  content: '';
+.feedback-form__checkbox + label::before {
+  content: "";
   position: absolute;
   top: -4px;
   left: 0;
@@ -179,37 +179,34 @@
   background: #f2f2f2;
 }
 
-.feedback-form__checkbox:checked + label:after {
-  content: '';
+.feedback-form__checkbox:checked + label::after {
+  content: "";
   position: absolute;
   top: 13px;
   left: 18px;
   width: 22px;
   height: 22px;
-  background: url(../img/icon-tick.svg) no-repeat;
+  background: url("../img/icon-tick.svg") no-repeat;
+    fill: #333333;
 }
 
-.feedback-form__checkbox:checked + label:before {
+.feedback-form__checkbox:checked + label::before {
   background-color: #f2f2f2;
 }
 
-.feedback-form__checkbox:checked + label:after {
-  fill: #333333;
-}
-
-.feedback-form__checkbox:hover + label:before {
+.feedback-form__checkbox:hover + label::before {
   background-color: #e5e5e5;
 }
 
-.feedback-form__checkbox:hover + label:after {
+.feedback-form__checkbox:hover + label::after {
   fill: #333333;
 }
 
-.feedback-form__checkbox:active + label:before {
+.feedback-form__checkbox:active + label::before {
   background-color: #d5d5d5;
 }
 
-.feedback-form__checkbox:active + label:after {
+.feedback-form__checkbox:active + label::after {
   fill: #a4a4a4;
 }
 
@@ -229,7 +226,7 @@
   display: block;
 }
 
-.feedback-form__radio + label:before {
+.feedback-form__radio + label::before {
   content: '';
   position: absolute;
   top: -3px;
@@ -240,7 +237,7 @@
   background-color: #f2f2f2;
 }
 
-.feedback-form__radio + label:after {
+.feedback-form__radio + label::after {
   content: '';
   position: absolute;
   top: 15px;
@@ -252,22 +249,22 @@
   opacity: 0;
   transition: .2s;
 }
-.feedback-form__radio:checked + label:after {
+.feedback-form__radio:checked + label::after {
   opacity: 1;
 }
-.feedback-form__radio:hover + label:before {
+.feedback-form__radio:hover + label::before {
   background-color: #e5e5e5;
 }
 
-.feedback-form__radio:hover + label:after {
+.feedback-form__radio:hover + label::after {
   background-color: #333333;
 }
 
-.feedback-form__radio:active + label:before {
+.feedback-form__radio:active + label::before {
   background-color: #d5d5d5;
 }
 
-.feedback-form__radio:active + label:after {
+.feedback-form__radio:active + label::after {
   background-color: #a4a4a4;
 }
 
