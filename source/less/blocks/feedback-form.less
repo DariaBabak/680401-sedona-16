@@ -187,7 +187,7 @@
   width: 22px;
   height: 22px;
   background: url("../img/icon-tick.svg") no-repeat;
-    fill: #333333;
+  fill: #333333;
 }
 
 .feedback-form__checkbox:checked + label::before {
@@ -227,7 +227,7 @@
 }
 
 .feedback-form__radio + label::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -3px;
   left: 0;
@@ -238,7 +238,7 @@
 }
 
 .feedback-form__radio + label::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;
@@ -247,11 +247,13 @@
   border-radius: 50%;
   background: #333333;
   opacity: 0;
-  transition: .2s;
+  transition: 0.2s;
 }
+
 .feedback-form__radio:checked + label::after {
   opacity: 1;
 }
+
 .feedback-form__radio:hover + label::before {
   background-color: #e5e5e5;
 }
@@ -338,11 +340,11 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 50px;
-    }
+  }
 
-    .feedback-form__impression-fieldset .feedback-form__impression-legend {
-      margin-bottom: 55px;
-    }
+  .feedback-form__impression-fieldset .feedback-form__impression-legend {
+    margin-bottom: 55px;
+  }
 
   .feedback-form__wrapper {
     display: flex;
