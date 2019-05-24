@@ -84,7 +84,7 @@
             <img class="main-navigation__emblem" src="img/logo-sedona-mobile.svg" width="103" height="84" alt="Герб Седоны">
           </picture>
         </a>
-        <button class="main-navigation__toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
@@ -105,15 +105,17 @@
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp 2x">
               <img class="photo-album__photo" src="img/photo-sunset-mobile@1x.webp" srcset="img/photo-sunset-mobile@2x.webp 2x" width="280" height="280" alt="Неродные просторы">
             </picture>
-            <div class="photo-album__photo-legend">
-              <h3 class="photo-album__photo-title">Неродные просторы</h3>
-              <span class="photo-album__photo-author">Автор фото: Борис</span>
+            <div class="photo-album__wrapper">
+              <div class="photo-album__photo-legend">
+                <h3 class="photo-album__photo-title">Неродные просторы</h3>
+                <span class="photo-album__photo-author">Автор фото: Борис</span>
+              </div>
+              <span class="photo-album__photo-likes">1350
+                <svg class="photo-album__like-icon" width="22" height="22">
+                  <use xlink:href="#thumb-up"></use>
+                </svg>
+              </span>
             </div>
-            <span class="photo-album__photo-likes">1350
-              <svg class="photo-album__like-icon" width="22" height="22">
-                <use xlink:href="#thumb-up"></use>
-              </svg>
-            </span>
           </li>
           <li class="photo-album__item">
             <picture>
@@ -183,23 +185,21 @@
           <div class="controls-wrapper">
             <div class="volume-scale">
             </div>
-            <div class="controls">
-              <button class="presentation__button">
-                <svg class="presentation__controls" width="20" height="20">
-                  <use xlink:href="#replay"></use>
-                </svg>
-              </button>
-              <button class="presentation__button">
-                <svg class="presentation__controls" width="32" height="20">
-                  <use xlink:href="#subtitles"></use>
-                </svg>
-              </button>
-              <button class="presentation__button">
-                <svg class="presentation__controls" width="20" height="20">
-                  <use xlink:href="#fulscreen"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="presentation__button">
+              <svg class="presentation__controls" width="20" height="20">
+                <use xlink:href="#replay"></use>
+              </svg>
+            </button>
+            <button class="presentation__button">
+              <svg class="presentation__controls" width="32" height="20">
+                <use xlink:href="#subtitles"></use>
+              </svg>
+            </button>
+            <button class="presentation__button">
+              <svg class="presentation__controls" width="20" height="20">
+                <use xlink:href="#fulscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

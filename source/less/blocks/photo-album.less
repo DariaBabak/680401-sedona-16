@@ -106,6 +106,7 @@
   .photo-album__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   .photo-album__photo-legend {
@@ -154,20 +155,62 @@
 
 @media (min-width: @desktop-width) {
   .photo-album {
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
   }
 
   .photo-album__item {
-    background-color: @white-color;
+    width: 400px;
+    height: 267px;
+    padding-bottom: 0;
+  }
+
+  .photo-album__item:first-of-type {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo-album__item picture {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo-album__item:first-of-type picture {
+    width: 1200px;
+    height: 400px;
   }
 
   .photo-album__photo {
     width: 400px;
-    height: auto;
+    height: 267px;
+  }
 
-    &:first-of-type {
-      width: 1200px;
-      height: auto;
-    }
+  .photo-album__photo:first-of-type {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .photo-album__wrapper {
+    margin-top: -90px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-album__wrapper:first-of-type {
+    width: 100%;
+    margin-top: -80px;
+    padding-top: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-album__photo-title,
+  .photo-album__photo-author,
+  .photo-album__photo-likes {
+    color: #ffffff;
   }
 }
