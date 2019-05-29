@@ -36,7 +36,7 @@
   margin-bottom: 16px;
 }
 
-.info-field {
+.feedback-form__info-field {
   display: flex;
   justify-content: space-between;
 }
@@ -60,7 +60,7 @@
   display: block;
 }
 
-.personal-info {
+.feedback-form__personal-info {
   background-color: #f2f2f2;
   padding: 22px 0 21px 21px;
   margin-bottom: 20px;
@@ -69,7 +69,7 @@
   flex-grow: 1;
 }
 
-.contact-info {
+.feedback-form__contact-info {
   width: 260px;
   background-color: #f2f2f2;
   padding: 22px 0 21px 21px;
@@ -81,13 +81,13 @@
   border: none;
 }
 
-.phone-info {
+.feedback-form__phone-info {
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 244px;
 }
 
-.email-info {
+.feedback-form__email-info {
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 244px;
@@ -115,28 +115,36 @@
   margin-bottom: 5px;
 }
 
-::-webkit-input-placeholder {
+.feedback-form__personal-info::-webkit-input-placeholder,
+.feedback-form__contact-info::-webkit-input-placeholder,
+.feedback-form__emotions::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
 }
 
-::-moz-placeholder {
+.feedback-form__personal-info::-moz-placeholder,
+.feedback-form__contact-info::-moz-placeholder,
+.feedback-form__emotions::-moz-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
 }
 
-:-moz-placeholder {
+.feedback-form__personal-info:-moz-placeholder,
+.feedback-form__contact-info:-moz-placeholder,
+.feedback-form__emotions:-moz-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
 }
 
-:-ms-input-placeholder {
+.feedback-form__personal-info:-ms-input-placeholder,
+.feedback-form__contact-info:-ms-input-placeholder,
+.feedback-form__emotions:-ms-input-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -328,7 +336,7 @@
     }
   }
 
-  .required-fields {
+  .feedback-form__required-fields {
     display: none;
   }
 }
@@ -352,8 +360,8 @@
     margin-bottom: 50px;
   }
 
-  .phone-info,
-  .email-info {
+  .feedback-form__phone-info,
+  .feedback-form__email-info {
     background-position: 617px;
   }
 
@@ -438,7 +446,7 @@
     padding-left: 35px;
   }
 
-  .contact-info {
+  .feedback-form__contact-info {
     width: 648px;
     margin-bottom: 22px;
   }
@@ -462,7 +470,7 @@
     width: 648px;
   }
 
-  .required-fields {
+  .feedback-form__required-fields {
     font-size: 14px;
     line-height: 26px;
     display: block;
@@ -579,16 +587,16 @@
     width: 960px;
   }
 
-  .contact-info {
+  .feedback-form__contact-info {
     width: 315px;
   }
 
-  .phone-info,
-  .email-info {
+  .feedback-form__phone-info,
+  .feedback-form__email-info {
     background-position: 300px;
   }
 
-  .phone {
+  .feedback-form__phone {
     display: none;
   }
 
@@ -640,7 +648,7 @@
     width: 480px;
   }
 
-  .required-fields {
+  .feedback-form__required-fields {
     margin-left: 316px;
   }
 
